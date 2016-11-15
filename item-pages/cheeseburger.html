@@ -7,8 +7,50 @@
 
 <body>
 
-
-
+  <div id="topIcons" >
+    <a href="PREVIOUS PAGE" >
+      <img id="backButton" src="/images/icon-back-button.png" >
+    </a>
+    
+    <a href="/index.html" >
+       <img id="homeButton" src="/images/icon-home-button.jpg" >
+    </a>
+    
+    <a href="/checkout.html" >
+      <p id="totalPrice" >0.00<p>
+    </a>
+  </div>
+  
+  <div id="container" >
+    
+    <div id="mainItem" >
+      
+      <h3 id="itemTitle" >Cheeseburger</h3>
+      
+      <img id="itemPhoto" src="/images/cheeseburger.jpg" >
+      
+      <p id="itemPrice" >$12.00</p>
+      
+      <div id="itemPageOrdering" >
+        <p>Quantity</p>
+        <img onclick="javascript:incrementOrderTotal(12.00); incrementQuantity(1); addToOrder('Cheeseburger');" src="icon-plus-sign.png" />
+        <p id="itemQuantity">0</p>
+        <img onclick="javascript:decrementOrderTotal(12.00); decrementQuantity(1); removeFromOrder('Cheeseburger');" src="icon-minus-sign.png" />
+      </div>
+      
+      <div id="description" >
+        <h4 id="descriptionTitle">Description</h4>
+        <p id="itemDescription">A succulent beef patty topped with cheese.</p>
+      </div>  
+      
+    </div>
+    
+    <div id="similarItems" >
+      
+    </div>
+    
+  </div>
+  
 </body>
 
 </html>

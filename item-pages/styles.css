@@ -1,24 +1,24 @@
-.backbutton {
+#backbutton {
   height: 5px;
   width: 10px;
 }
 
-.itemTitle  {
+#itemTitle  {
   text-decoration: underline;
 }
 
-.itemPhoto  {
+#itemPhoto  {
   height: 150px;
   width: 150px;
   border-radius: 25px;
 }
 
-#similarItemPhoto  {
+.similarItemPhoto  {
   width: 25px;
   height: 25px;
 }
 
-.similarItemTitle  {
+#similarItemTitle  {
   font-variant: small-caps;
 }
 

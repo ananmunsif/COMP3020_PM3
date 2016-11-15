@@ -7,8 +7,68 @@
 
 <body>
 
-
-
+  <div id="topIcons" >
+    <a href="PREVIOUS PAGE" >
+      <img id="backButton" src="/images/icon-back-button.png" >
+    </a>
+    
+    <a href="/index.html" >
+       <img id="homeButton" src="/images/icon-home-button.jpg" >
+    </a>
+    
+    <a href="/checkout.html" >
+      <p id="totalPrice" >0.00<p>
+    </a>
+  </div>
+  
+  <div id="container" >
+    
+    <div id="mainItem" >
+      
+      <h2 id="itemTitle" >Chickenburger</h2>
+      
+      <img id="itemPhoto" src="/images/chickenburger.jpg" >
+      
+      <p id="itemPrice" >$13.00</p>
+      
+      <div id="itemPageOrdering" >
+        <p>Quantity</p>
+        <img onclick="javascript:incrementOrderTotal(13.00); incrementQuantity(1); addToOrder('Chickenburger');" src="icon-plus-sign.png" />
+        <p id="itemQuantity">0</p>
+        <img onclick="javascript:decrementOrderTotal(13.00); decrementQuantity(1); removeFromOrder('Chickenburger');" src="icon-minus-sign.png" />
+      </div>
+      
+      <div id="description" >
+        <h4 id="descriptionTitle">Description</h4>
+        <p id="itemDescription">A succulent chicken patty on a brioge bun.</p>
+      </div>  
+      
+    </div>
+    
+    <div id="similarItems" >
+      
+      <h3 id="similarItemTitle">Similar Dishes</h3>
+      
+      <a href="fries.html" >
+        <img class="similarItemPhoto" src="fries.png" />
+      </a>
+      
+      <a href="hamburger.html" >
+        <img class="similarItemPhoto" src="hamburger.png" />
+      </a>
+      
+      <a href="dbl-cheeseburger.html" >
+        <img class="similarItemPhoto" src="dbl-cheeseburger.jpg" />
+      </a>
+      
+      <a href="chickenburger.html" >
+        <img class="similarItemPhoto" src="chickenburger.jpg" />
+      </a>
+      
+    </div>
+    
+  </div>
+  
 </body>
 
 </html>

@@ -7,8 +7,68 @@
 
 <body>
 
-
-
+  <div id="topIcons" >
+    <a href="PREVIOUS PAGE" >
+      <img id="backButton" src="/images/icon-back-button.png" >
+    </a>
+    
+    <a href="/index.html" >
+       <img id="homeButton" src="/images/icon-home-button.jpg" >
+    </a>
+    
+    <a href="/checkout.html" >
+      <p id="totalPrice" >0.00<p>
+    </a>
+  </div>
+  
+  <div id="container" >
+    
+    <div id="mainItem" >
+      
+      <h2 id="itemTitle" >Hamburger</h2>
+      
+      <img id="itemPhoto" src="/images/hamburger.png" >
+      
+      <p id="itemPrice" >$10.00</p>
+      
+      <div id="itemPageOrdering" >
+        <p>Quantity</p>
+        <img onclick="javascript:incrementOrderTotal(14.00); incrementQuantity(1); addToOrder('Hamburger');" src="icon-plus-sign.png" />
+        <p id="itemQuantity">0</p>
+        <img onclick="javascript:decrementOrderTotal(14.00); decrementQuantity(1); removeFromOrder('Hamburger');" src="icon-minus-sign.png" />
+      </div>
+      
+      <div id="description" >
+        <h4 id="descriptionTitle">Description</h4>
+        <p id="itemDescription">Two succulent beef patties topped with cheese. For the hungry!</p>
+      </div>  
+      
+    </div>
+    
+    <div id="similarItems" >
+      
+      <h3 id="similarItemTitle">Similar Dishes</h3>
+      
+      <a href="cheeseburger.html" >
+        <img class="similarItemPhoto" src="cheeseburger.jpg" />
+      </a>
+      
+      <a href="dbl-cheeseburger.html" >
+        <img class="similarItemPhoto" src="dbl-cheeseburger.jpg" />
+      </a>
+      
+      <a href="chickenburger.html" >
+        <img class="similarItemPhoto" src="chickenburger.jpg" />
+      </a>
+      
+      <a href="fries.html" >
+        <img class="similarItemPhoto" src="fries.png" />
+      </a>
+      
+    </div>
+    
+  </div>
+  
 </body>
 
 </html>

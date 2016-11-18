@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
-  <link rel="stylesheet" type="text/css" href="styles.css">
-
+	<link rel="stylesheet" type="text/css" href="styles.css">
+		
 </head>
 
 <body>
@@ -24,51 +23,58 @@
   
   <div id="container" >
     
+	
     <div id="mainItem" >
       
       <h2 id="itemTitle" >Cheeseburger</h2>
       
-      <img id="itemPhoto" src="../images/cheeseburger.jpg" >
+      <img id="itemPhoto" src="../images/cheeseburger.jpg" />
       
       <p id="itemPrice" >$12.00</p>
+	  
       
       <div id="itemPageOrdering" >
-        <p>Quantity</p>
-        <img onclick="javascript:incrementOrderTotal(12.00); incrementQuantity(1); addToOrder('Cheeseburger');" src="icon-plus-sign.png" />
-        <p id="itemQuantity">0</p>
-        <img onclick="javascript:decrementOrderTotal(12.00); decrementQuantity(1); removeFromOrder('Cheeseburger');" src="icon-minus-sign.png" />
-      </div>
-      
-      <div id="description" >
-        <h4 id="descriptionTitle">Description</h4>
+        <h5>Quantity:</h5>
+        <img id="plusSign" onclick="addToOrder('Cheeseburger', 12.00)" src="../images/icon-plus-sign.png" />
+        <p id="itemQuantity"></p>
+        <img id="minusSign" onclick="removeFromOrder('Cheeseburger', -12.00);" src="../images/icon-minus-sign.png" />
+      </div>   
+	  
+	  <div id="description" >
+		<h4 id="descriptionTitle">Description</h4>
         <p id="itemDescription">A succulent beef patty topped with cheese.</p>
-      </div>  
-      
-    </div>
+      </div>
+	  
+	</div>
+	
+	
     
     <div id="similarItems" >
       
       <h3 id="similarItemTitle">Similar Dishes</h3>
       
-      <a href="hamburger.html" >
+      <a class="similarLink" href="hamburger.html" >
         <img class="similarItemPhoto" src="../images/hamburger.png" />
       </a>
       
-      <a href="dbl-cheeseburger.html" >
+      <a class="similarLink" href="dbl-cheeseburger.html" >
         <img class="similarItemPhoto" src="../images/dbl-cheeseburger.jpg" />
       </a>
       
-      <a href="chickenburger.html" >
+      <a class="similarLink" href="chickenburger.html" >
         <img class="similarItemPhoto" src="../images/chickenburger.jpg" />
       </a>
       
-      <a href="fries.html" >
+      <a class="similarLink" href="fries.html" >
         <img class="similarItemPhoto" src="../images/fries.png" />
       </a>
       
     </div>
     
   </div>
+  
+  <script src="pm3-group20.js">
+	</script>
   
 </body>
 
